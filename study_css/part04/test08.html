@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				border: 1px solid black;
+				margin: 10px;
+			}
+			span{
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<div>默认宽度100%的div无法居中</div>
+		<div style="width: 300px;margin: 0, auto;">
+			设置div宽度，然后可以居中
+		</div>
+		<span>span是内联元素，无法设置宽度，无法居中</span>
+		<div style="text-align: center;">
+			<span>
+				span的居中可以通过放入div中，然后text-align实现居中
+			</span>
+		</div>
+	</body>
+</html>

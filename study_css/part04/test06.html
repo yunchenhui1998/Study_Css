@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			div#none{
+				display: none;
+			}
+			div#commondiv,span{
+				border: 1px solid black;
+				margin: 10px;
+				width: 200px;
+				height: 100px;
+			}
+			span#block{
+				display: block;
+			}
+			div#inlinediv{
+				display: inline;
+				margin: 10px;
+				width: 200px;
+				height: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>可见的div1</div>
+		<div id="none">不可见的div2</div>
+		<div>可见的div3</div><br><br><br>
+		<div id="commondiv">普通的div块</div>
+		<span>普通的span</span>
+		<span>普通的span</span>
+		<span>普通的span</span>
+		<span id="block">
+			被改造成块元素的span
+		</span>
+		<div id="inlinediv">
+			被改造成内联元素的div
+		</div>
+	</body>
+</html>
